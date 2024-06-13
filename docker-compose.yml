@@ -1,0 +1,23 @@
+version: '3'
+services:
+  node1:
+    build: .
+    ports:
+      - "3001:3000"
+    environment:
+      - PORT=3000
+      - NODE_NAME=node1
+  node2:
+    build: .
+    ports:
+      - "3002:3000"
+    environment:
+      - PORT=3000
+      - NODE_NAME=node2
+  node3:
+    build: .
+    ports:
+      - "3003:3000"
+    environment:
+      - PORT=3000
+      - NODE_NAME=node3
